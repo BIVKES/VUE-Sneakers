@@ -48,8 +48,3 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: 'vue-sneakers-dist'
-EOF
-
-git add .github/workflows/deploy.yml
-git commit -m "Fix complete deploy workflow"
-git push origin main
