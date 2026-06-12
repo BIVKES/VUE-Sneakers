@@ -4,7 +4,7 @@
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
     <button class="back-btn" @click="$emit('click')">
-      <img src="/arrow-left.svg" alt="Back" />
+      <img src="/vue-sneakers/arrow-left.svg" alt="Back" />
       {{ buttonText }}
     </button>
   </div>

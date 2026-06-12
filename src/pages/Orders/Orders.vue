@@ -2,7 +2,7 @@
   <div>
     <h1 class="page-title">
       <router-link to="/" class="page-title__back">
-        <img src="/arrow-left.svg" alt="Back" />
+        <img src="/vue-sneakers/arrow-left.svg" alt="Back" />
       </router-link>
       Мои покупки
     </h1>
@@ -29,7 +29,7 @@
               class="order-card__remove" 
               @click="$emit('remove-order', item.id)"
             >
-              <img src="/close.svg" alt="Remove" />
+              <img src="/vue-sneakers/close.svg" alt="Remove" />
             </button>
           </div>
         </div>

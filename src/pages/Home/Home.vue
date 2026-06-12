@@ -5,7 +5,7 @@
     <div class="search-block">
       <h1>Все кроссовки</h1>
       <div class="search-wrapper">
-        <img src="/search.svg" alt="Search" class="search-icon" />
+        <img src="/vue-sneakers/search.svg" alt="Search" class="search-icon" />
         <input type="text" placeholder="Поиск..." v-model="searchQuery" />
       </div>
     </div>

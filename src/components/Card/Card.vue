@@ -5,7 +5,7 @@
       :class="{ liked: isFavorite }"
       @click.stop="toggleFavorite"
     >
-      <img :src="isFavorite ? '/heart-liked.svg' : '/heart.svg'" alt="Favorite" />
+      <img :src="isFavorite ? '/vue-sneakers/heart-liked.svg' : '/heart.svg'" alt="Favorite" />
     </button>
 
     <img :src="imageUrl" :alt="title" class="card__img" />
@@ -22,8 +22,8 @@
         :class="{ added: isAdded }"
         @click.stop="toggleCart"
       >
-        <img v-if="isAdded" src="/checked.svg" alt="Added" />
-        <img v-else src="/plus.svg" alt="Add" />
+        <img v-if="isAdded" src="/vue-sneakers/checked.svg" alt="Added" />
+        <img v-else src="/vue-sneakers/plus.svg" alt="Add" />
       </button>
     </div>
   </div>

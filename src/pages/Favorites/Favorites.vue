@@ -2,7 +2,7 @@
   <div>
     <h1 class="page-title">
       <router-link to="/" class="back-btn">
-        <img src="/heart-liked.svg" alt="Back" />
+        <img src="/vue-sneakers/heart-liked.svg" alt="Back" />
       </router-link>
       Мои закладки
     </h1>

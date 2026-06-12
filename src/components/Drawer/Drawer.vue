@@ -5,7 +5,7 @@
       <div class="drawer__header">
         <h2>Корзина</h2>
         <button class="close-btn" @click="$emit('close')">
-          <img src="/close.svg" alt="Close" />
+          <img src="/vue-sneakers/close.svg" alt="Close" />
         </button>
       </div>
 
@@ -37,7 +37,7 @@
             <p>{{ item.price }} руб.</p>
           </div>
           <button class="remove-btn" @click="$emit('remove', item.id)">
-            <img src="/close.svg" alt="Remove" />
+            <img src="/vue-sneakers/close.svg" alt="Remove" />
           </button>
         </div>
       </div>
@@ -53,7 +53,7 @@
         </div>
         <button class="checkout-btn" @click="$emit('checkout')">
           Оформить заказ
-          <img src="/arrow-right.svg" alt="Arrow" />
+          <img src="/vue-sneakers/arrow-right.svg" alt="Arrow" />
         </button>
       </div>
     </div>

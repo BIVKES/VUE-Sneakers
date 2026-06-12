@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <router-link to="/" class="header__logo">
-        <img src="/logo.png" alt="React Sneakers" />
+        <img src="/vue-sneakers/logo.svg" alt="Vue Sneakers" />
         <div class="header__logo-text">
           <h3>Vue Sneakers</h3>
           <p>Магазин лучших кроссовок</p>
