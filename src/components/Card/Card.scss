@@ -1,0 +1,95 @@
+@use '../../styles/index' as *;
+
+.card {
+  background: $white;
+  border: 1px solid $gray-lighter;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  transition: transform $transition-normal, box-shadow $transition-normal, border-color $transition-normal;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow:  0px 14px 30px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+  }
+
+  &__favorite {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    @include flex-center;
+    border-radius: 7px;
+    border: 1px solid $gray-lighter;
+    background: $white;
+    transition: $transition-fast;
+
+    &:hover {
+      border-color: #FF8585;
+    }
+
+    &.liked {
+      border-color: #FF8585;
+      background: #FEF0F0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    min-height: 40px;
+  }
+
+  &__footer {
+    @include flex-between;
+  }
+
+  &__price {
+    &-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #9D9D9D;
+      margin-bottom: 2px;
+    }
+
+    &-value {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__add {
+    width: 32px;
+    height: 32px;
+    @include flex-center;
+    border-radius: 8px;
+    border: 1px solid $gray-lighter;
+    background: $white;
+    transition: $transition-fast;
+
+    &:hover {
+      background: #F7F6F4;
+      transform: scale(1.1);
+    }
+
+    &.added {
+      background: $green;
+      border-color: $green;
+      transform: scale(1);
+    }
+  }
+}

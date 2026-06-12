@@ -1,0 +1,144 @@
+@use '../../styles/index' as *;
+
+.slider {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  background: #F4EFE9;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    min-height: 300px;
+  }
+
+  &__text {
+    flex: 1;
+    z-index: 2;
+
+    .brand-logos {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      img {
+        height: 30px;
+        object-fit: contain;
+      }
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 25px;
+
+      .green {
+        color: $green-dark;
+      }
+    }
+
+    .buy-btn {
+      padding: 14px 50px;
+      background: $green;
+      color: $white;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 20px;
+      transition: transform $transition-fast;
+
+      &:hover {
+        background: $green-dark;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  &__img {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  z-index: 1;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    @include flex-center;
+    background: $white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    z-index: 3;
+    transition: transform $transition-fast;
+
+    &:hover {
+      background: #F7F6F4;
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    &.prev {
+      left: 15px;
+    }
+
+    &.next {
+      right: 15px;
+    }
+  }
+
+  &__brand-logo {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+  }
+}
+
+
+@media (max-width: $mobile) {
+  .slider {
+    &__content {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+    }
+
+    &__text {
+      font-size: 28px;
+      margin-top: 50px;
+    }
+
+    &__img {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .slider {
+    &__text h2 {
+      font-size: 22px;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
+}

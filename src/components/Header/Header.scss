@@ -1,0 +1,97 @@
+@use '../../styles/index' as *;
+
+.header {
+  background: $white;
+  border-bottom: 1px solid $gray-lighter;
+  padding: 20px 0;
+  margin-bottom: 20px;
+
+  .container {
+    @include flex-between;
+  }
+
+  &__logo {
+    @include flex-center;
+    gap: 15px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    &-text {
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #9D9D9D;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .nav-item {
+      @include flex-center;
+      gap: 8px;
+      font-size: 14px;
+      color: #5C5C5C;
+      cursor: pointer;
+      transition: $transition-fast;
+      position: relative;
+
+      &:hover {
+        color: $black;
+      }
+
+      &.active {
+        color: $green;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .badge {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background: #FF8585;
+        color: $white;
+        font-size: 10px;
+        font-weight: 700;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        @include flex-center;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .header {
+    padding: 15px 0;
+
+    &__logo-text {
+      display: none;
+    }
+
+    &__nav {
+      gap: 15px;
+
+      .nav-item span {
+        display: none;
+      }
+    }
+  }
+}
