@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/VUE-Sneakers/', 
+  base: './', 
   cacheDir: resolve(__dirname, '.vite_cache'),
   css: {
     preprocessorOptions: {
