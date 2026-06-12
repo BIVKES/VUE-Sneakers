@@ -42,7 +42,7 @@ export default {
     isOrderComplete: false,
     orderId: null,
     items: this.loadFromStorage() || [
-      { id: 1, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 12999, imageUrl: '/sneakers/sneakers-10.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+      { id: 1, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 12999, imageUrl: '/vue-sneakers/sneakers/sneakers-10.jpg', isFavorite: false, isAdded: false, isOrdered: false },
     ]
   }
 },
