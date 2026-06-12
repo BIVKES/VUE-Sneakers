@@ -1,8 +1,8 @@
-<template>
+<<template>
   <div>
     <h1 class="page-title">
-      <router-link to="/" class="back-btn">
-        <img src="/vue-sneakers/heart-liked.svg" alt="Back" />
+      <router-link to="/" class="page-title__back">
+        <img :src="arrowLeft" alt="Back" />
       </router-link>
       Мои закладки
     </h1>
@@ -19,7 +19,7 @@
       v-else
       title="Закладок нет :("
       description="Вы ничего не добавляли в закладки"
-      image="/emoji-2.png"
+      :image="emoji2"
       buttonText="Вернуться назад"
       @click="$router.push('/')"
     />
@@ -29,12 +29,15 @@
 <script>
 import CardList from '../../components/CardList/CardList.vue'
 import InfoBlock from '../../components/Info/Info.vue'
+import arrowLeft from '../../assets/icons/arrow-left.svg'
+import emoji2 from '../../assets/icons/emoji-2.png'
 
 export default {
   name: 'FavoritesPage',
   components: { CardList, InfoBlock },
   props: { items: Array },
   emits: ['toggle-favorite', 'toggle-cart'],
+  data() { return { arrowLeft, emoji2 } },
   computed: {
     favoriteItems() {
       return this.items.filter(item => item.isFavorite)
