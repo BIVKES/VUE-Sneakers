@@ -28,7 +28,7 @@
     <InfoBlock
       v-else
       title="У вас нет заказов"
-      description="Вы нищеброд? Оформите хотя бы один заказ."
+      description="Вы нищеброд? Оформите хотя бы один заказ. И Юра устроит меня на работу."
       :image="emoji1"
       buttonText="Вернуться назад"
       @click="$router.push('/')"
