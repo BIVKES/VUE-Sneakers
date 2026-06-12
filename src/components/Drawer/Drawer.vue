@@ -47,7 +47,7 @@
 
       <!-- Футер -->
       <div v-if="items.length > 0 && !isOrderComplete" class="drawer__footer">
-        <div class="total-row">
+        <div class="total-row dashed">
           <span>Итого:</span>
           <span>{{ totalPrice }} руб.</span>
         </div>
@@ -68,7 +68,7 @@
 import close from '../../assets/icons/close.svg'
 import arrowRight from '../../assets/icons/arrow-right.svg'
 import arrowLeft from '../../assets/icons/arrow-left.svg'
-import packageIcon from '../../assets/icons/package-icon.svg'
+import packageIcon from '../../assets/icons/package-icon.png'
 import orderSuccess from '../../assets/icons/order-success.png'
 
 export default {

@@ -4,7 +4,7 @@
       <router-link to="/" class="header__logo">
         <img :src="logo" alt="React Sneakers" />
         <div class="header__logo-text">
-          <h3>React Sneakers</h3>
+          <h3>VUE Sneakers</h3>
           <p>Магазин лучших кроссовок</p>
         </div>
       </router-link>

@@ -71,18 +71,18 @@ export default {
     
     const data = JSON.parse(saved)
     const baseItems = [
-  { id: 1, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 12999, imageUrl: '/vue-sneakers/sneakers/sneakers-10.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 1, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 12999, imageUrl: '/vue-sneakers/sneakers/sneakers-1.jpg', isFavorite: false, isAdded: false, isOrdered: false },
   { id: 2, title: 'Мужские Кроссовки Nike Air Max 270', price: 12999, imageUrl: '/vue-sneakers/sneakers/sneakers-2.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 3, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 8499, imageUrl: '/vue-sneakers/sneakers/sneakers-11.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 3, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 8499, imageUrl: '/vue-sneakers/sneakers/sneakers-3.jpg', isFavorite: false, isAdded: false, isOrdered: false },
   { id: 4, title: 'Кроссовки Puma X Aka Boku Future Rider', price: 8999, imageUrl: '/vue-sneakers/sneakers/sneakers-4.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 5, title: 'Мужские Кроссовки Under Armour Curry 8', price: 15199, imageUrl: '/vue-sneakers/sneakers/sneakers-9.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 6, title: 'Мужские Кроссовки Nike Kyrie 7', price: 11299, imageUrl: '/vue-sneakers/sneakers/sneakers-8.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 5, title: 'Мужские Кроссовки Under Armour Curry 8', price: 15199, imageUrl: '/vue-sneakers/sneakers/sneakers-5.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 6, title: 'Мужские Кроссовки Nike Kyrie 7', price: 11299, imageUrl: '/vue-sneakers/sneakers/sneakers-6.jpg', isFavorite: false, isAdded: false, isOrdered: false },
   { id: 7, title: 'Мужские Кроссовки Jordan Air Jordan 11', price: 10799, imageUrl: '/vue-sneakers/sneakers/sneakers-7.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 8, title: 'Мужские Кроссовки Nike LeBron XVIII', price: 16499, imageUrl: '/vue-sneakers/sneakers/sneakers-5.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 9, title: 'Мужские Кроссовки Nike Lebron XVIII Low', price: 13999, imageUrl: '/vue-sneakers/sneakers/sneakers-1.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 10, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 8499, imageUrl: '/vue-sneakers/sneakers/sneakers-12.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 11, title: 'Кроссовки Puma X Aka Boku Future Rider', price: 8999, imageUrl: '/vue-sneakers/sneakers/sneakers-3.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-  { id: 12, title: 'Мужские Кроссовки Nike Kyrie Flytrap IV', price: 11299, imageUrl: '/vue-sneakers/sneakers/sneakers-6.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 8, title: 'Мужские Кроссовки Nike LeBron XVIII', price: 16499, imageUrl: '/vue-sneakers/sneakers/sneakers-8.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 9, title: 'Мужские Кроссовки Nike Lebron XVIII Low', price: 13999, imageUrl: '/vue-sneakers/sneakers/sneakers-9.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 10, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 8499, imageUrl: '/vue-sneakers/sneakers/sneakers-10.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 11, title: 'Кроссовки Puma X Aka Boku Future Rider', price: 8999, imageUrl: '/vue-sneakers/sneakers/sneakers-11.jpg', isFavorite: false, isAdded: false, isOrdered: false },
+  { id: 12, title: 'Мужские Кроссовки Nike Kyrie Flytrap IV', price: 11299, imageUrl: '/vue-sneakers/sneakers/sneakers-12.jpg', isFavorite: false, isAdded: false, isOrdered: false },
 ]
     
     return baseItems.map(base => {

@@ -1,11 +1,11 @@
-<<template>
+<template>
   <div>
     <HeroSlider />
     <div class="search-block">
       <h1>Все кроссовки</h1>
-      <div class="search-block__wrapper">
-        <img :src="search" alt="Search" class="search-block__icon" />
-        <input type="text" placeholder="Поиск..." v-model="searchQuery" class="search-block__input" />
+      <div class="search-wrapper">
+        <img :src="search" alt="Search" class="search-icon" />
+        <input type="text" placeholder="Поиск..." v-model="searchQuery" />
       </div>
     </div>
     <CardList :items="filteredItems" @toggle-favorite="$emit('toggle-favorite', $event)" @toggle-cart="$emit('toggle-cart', $event)" />
