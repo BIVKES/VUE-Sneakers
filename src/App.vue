@@ -41,9 +41,7 @@ export default {
       isDrawerOpen: false,
       isOrderComplete: false,
       orderId: null,
-      items: this.loadFromStorage() || [
-        { id: 1, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 12999, imageUrl: './sneakers/sneakers-1.jpg', isFavorite: false, isAdded: false, isOrdered: false },
-      ]
+      items: this.loadFromStorage()
     }
   },
   computed: {
@@ -67,9 +65,7 @@ export default {
     
     loadFromStorage() {
       const saved = localStorage.getItem('sneakers_data')
-      if (!saved) return null
       
-      const data = JSON.parse(saved)
       const baseItems = [
         { id: 1, title: 'Мужские Кроссовки Nike Blazer Mid Suede', price: 12999, imageUrl: './sneakers/sneakers-1.jpg', isFavorite: false, isAdded: false, isOrdered: false },
         { id: 2, title: 'Мужские Кроссовки Nike Air Max 270', price: 12999, imageUrl: './sneakers/sneakers-2.jpg', isFavorite: false, isAdded: false, isOrdered: false },
@@ -84,6 +80,10 @@ export default {
         { id: 11, title: 'Кроссовки Puma X Aka Boku Future Rider', price: 8999, imageUrl: './sneakers/sneakers-11.jpg', isFavorite: false, isAdded: false, isOrdered: false },
         { id: 12, title: 'Мужские Кроссовки Nike Kyrie Flytrap IV', price: 11299, imageUrl: './sneakers/sneakers-12.jpg', isFavorite: false, isAdded: false, isOrdered: false },
       ]
+      
+      if (!saved) return baseItems
+      
+      const data = JSON.parse(saved)
       
       return baseItems.map(base => {
         const savedItem = data.find(s => s.id === base.id)
