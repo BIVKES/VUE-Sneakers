@@ -127,12 +127,12 @@
     &__img {
       margin-top: 20px;
       width: 100%;
-    }
-  }
-}
 
-@media (max-width: $mobile) {
-  .slider {
+        img {
+        height: 90%;
+      }
+    }
+
     &__text h2 {
       font-size: 22px;
     }
@@ -142,3 +142,4 @@
     }
   }
 }
+
