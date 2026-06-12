@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import logo from '../../assets/icons/logo.svg'
+import logo from '../../assets/icons/logo.png'
 import cart from '../../assets/icons/cart.svg'
 import heart from '../../assets/icons/heart.svg'
 import profile from '../../assets/icons/profile.svg'
